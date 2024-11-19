@@ -4,11 +4,20 @@ public class NDrob {
     // поля (свойства) класса
     int numerator;
     int denominator;
+    static int counter = 0; // static field
     // методы класса
     // конструктор
+    public static void soutCounter() {
+        System.out.println("Всего создано " + counter + " дробей");
+    }
+    /*static { // это static блок
+        counter = 4; при первом срабатывании NDrob он используется, а после не используется
+    }*/
+
     public NDrob(){
         numerator = 1;
         denominator = 1;
+        counter++;
     }
     // cеттеры и гетеры
 
