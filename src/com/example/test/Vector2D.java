@@ -11,12 +11,11 @@ public class Vector2D {
         X = vX;
         Y = vY;
     }
-    public Vector2D(Vector2D other) {
-        
+    public Vector2D Vector2D(Vector2D other) {
+        Vector2D result = new Vector2D();
+        result.X = other.X;
+        result.Y = other.Y;
+        return result;
     }
-
-    @Override
-    public String toString() {
-        return "(" + X + ", " + Y + ")";
-    }
+    
 }
