@@ -1,5 +1,7 @@
 package com.example.test;
 
+import java.util.Locale;
+
 public class Vector2D {
     public double X;
     public double Y;
@@ -11,11 +13,17 @@ public class Vector2D {
         X = vX;
         Y = vY;
     }
-    public Vector2D Vector2D(Vector2D other) {
-        Vector2D result = new Vector2D();
-        result.X = other.X;
-        result.Y = other.Y;
-        return result;
+    public Vector2D(Vector2D other) {
+        //Vector2D result = new Vector2D();
+        X = other.X;
+        Y = other.Y;
     }
-    
+    public void length(Vector2D other) {
+        
+    }
+    public void print() {
+        String x = (String.format(Locale.US,"%.2f", X));
+        String y = (String.format(Locale.US,"%.2f", Y));
+        System.out.println("(" + x + ", " + y + ")");
+    }
 }
