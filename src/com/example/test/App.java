@@ -1,10 +1,12 @@
 package com.example.test;
 
+import java.awt.*;
+import java.util.Scanner;
+
+
 public class App {
     public static void main(String[] args) {
-        OtherClass otherClass = new OtherClass(34);
-        System.out.println(otherClass.x);
-        // иллюстрация того, что наследник взял функцию у родителя.
-        System.out.println(otherClass);
+        Scanner scanner = new Scanner(System.in);
+
     }
 }
