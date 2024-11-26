@@ -79,7 +79,7 @@ public class PointToPlane {
         y /= scale;
     }
     public double lenpointfrombegin() {
-        return Math.pow(Math.pow((x + y), 2), 0.5);
+        return Math.sqrt(Math.pow((x + y), 2));
     }
     @Override
     public String toString() {
